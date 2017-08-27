@@ -33,8 +33,6 @@ def tanh_deriv(tanh_compress_output):
     return a
 
 
-
-# In[3]:
 import numpy as np
 
 def feedforward(Input, IH_wts, HO_wts):
@@ -215,7 +213,6 @@ def HTRACX_learn(bipolar_seq, IH_wts, HO_wts, IH_wts1, HO_wts1, IH_wts2, HO_wts2
     return {'IH_wts':IH_wts, 'HO_wts':HO_wts , 'IH_wts1':IH_wts1, 'HO_wts1':HO_wts1, 'IH_wts2':IH_wts2, 'HO_wts2':HO_wts2, 'D':D, 'D1':D1, 'D2':D2, 'Hid':Hid_array, 'Hid1':Hid1_array, 'Hid2':Hid2_array, 'RHS1': RHS1_array,\
      'RHS2':RHS2_array, 'Output':Output_arr, 'Output1':Output1_arr,'Output2':Output2_arr, 'Target':Target_arr, 'Target1':Target1_arr,'Target2':Target2_arr} 
 
-# In[5]:
 
 def HTRACX_test(seq, IH_wts, HO_wts, IH_wts1, HO_wts1, IH_wts2, HO_wts2, tau_array, Modeltype, objective_func ):
     bipolar_seq = seq
