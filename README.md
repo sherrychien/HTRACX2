@@ -1,1 +1,1 @@
-# HTRACX2
+# Hierarchical autoencoder in time (HAT) model
